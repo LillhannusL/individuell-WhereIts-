@@ -1,0 +1,16 @@
+.order__button {
+    width: 19.4rem;
+    height: 3.75rem;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--turqoise);
+    color: var(--white);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.38rem;
+    font-weight: 600;
+
+    position: fixed;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}

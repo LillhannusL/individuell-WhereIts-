@@ -1,6 +1,17 @@
 .eventspage {
-    display: grid;
-    place-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    color: var(--white);
+}
+
+.eventspage__list {
+    width: 100%;
+}
+
+.eventspage__list a {
+    text-decoration: none;
     color: var(--white)
 }

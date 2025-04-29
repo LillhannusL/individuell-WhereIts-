@@ -11,9 +11,10 @@
   --dark-blue: #231F42;
   --text-pink: #F56B9A;
   --white: #FFFFFF;
-  --white-opacity: #FFFFFF80;
+  --white-opacity: #FFFFFF90;
+  --grey: #D0D0D0;
   --turqoise: #37AEAB;
-  --black-shadow: #000000
+  --text-shadow: 2px 2px 0 black;
 }
 
 * {
@@ -31,8 +32,19 @@
 .page h1 {
   font-family: 'Sansita One', sans-serif;
   color: var(--text-pink);
-  text-shadow: 1px 1px 0 var(--black-shadow);
+  text-shadow: var(--text-shadow);
   font-size: 2rem;
   letter-spacing: 1px;
+  margin: 1rem;
+}
+
+.page h3 {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--white);
+  font-style: italic;
+  text-shadow: var(--text-shadow);
+  font-size: 1.3rem;
+  letter-spacing: 1.3px;
+  font-weight: 400;
 }
 
