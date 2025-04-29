@@ -1,0 +1,12 @@
+.landingpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingpage__logo {
+    width: 100%;
+    max-width: 180px;
+}
+
