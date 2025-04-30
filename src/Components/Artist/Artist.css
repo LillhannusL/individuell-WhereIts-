@@ -15,16 +15,6 @@
  gap: .5rem
 }
 
-.artistevent h4 {
-    width: 60%;
-    color: var(--white);
-    font-style: italic;
-    font-size: 1.19rem;
-    font-weight: 200;
-    text-align: center;
-    margin: 2rem;
-}
-
 .artistevent h2 {
     font-family: 'Sansita One', sans-serif;
     letter-spacing: .1rem;

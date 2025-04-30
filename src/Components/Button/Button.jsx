@@ -1,8 +1,8 @@
 import "./Button.css"
 
-function Button( {text}) {
+function Button( {onClick, text}) {
   return (
-    <button className="order__button">{text}</button>
+    <button onClick={ onClick }className="order__button">{text}</button>
   )
 }
 
