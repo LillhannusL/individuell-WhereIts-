@@ -1,0 +1,23 @@
+.ticket {
+    width: 100%;
+}
+
+.counter--cart {
+    border: 1px solid var(--text-pink);
+    width: 100%;
+    border-radius: 3px;
+}
+
+.counter--cart h2 {
+    padding: .5rem 0 0 0.5rem ;
+    color: var(--text-pink);
+    font-size: 1.5rem;
+}
+
+.counter--cart h4 {
+    color: var(--turqoise);
+    font-family: 'Fira sans', sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    padding: 0 0 .5rem .5rem ;
+}

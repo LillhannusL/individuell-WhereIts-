@@ -48,3 +48,7 @@
   font-weight: 400;
 }
 
+.link {
+  text-decoration: none;
+  font-family: "Fira Sans", sans-serif;
+}

@@ -5,13 +5,13 @@ function Navbar() {
   return (
     <footer className="footer">
         <nav className="navbar">
-            <Link to='/'>
+            <Link to='/' className="link">
                 <h2>Home</h2>
             </Link>
-            <Link to='/events'>
+            <Link to='/events' className="link">
                 <h2>Events</h2>
             </Link>
-            <Link to='/order'>
+            <Link to='/order' className="link">
                 <h2>Varukorg</h2>
             </Link>
 
