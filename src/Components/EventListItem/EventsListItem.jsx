@@ -1,8 +1,8 @@
-import "./EventsList.css"
+import "./EventsListItem.css"
 import { shortenDate } from "../Utils/shortenDate";
 import { Link } from "react-router-dom";
 
-function EventsList({ event }) {
+function EventsListItem({ event }) {
 
   return (
     <Link to={'/artist/' + event.id}>
@@ -22,4 +22,4 @@ function EventsList({ event }) {
   )
 }
 
-export default EventsList;
+export default EventsListItem;
