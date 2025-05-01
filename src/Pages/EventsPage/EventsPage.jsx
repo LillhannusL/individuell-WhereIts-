@@ -1,5 +1,5 @@
 import "./EventsPage.css"
-import EventsList from "../../Components/EventList/EventsList";
+import EventsListItem from "../../Components/EventListItem/EventsListItem";
 import { useFetch } from "../../Hooks/useFetch"
 import Navbar from "../../Components/Nav/Navbar";
 
@@ -17,7 +17,7 @@ function EventsPage() {
       <section className="eventspage__list">
         {
           eventList.map((event) => {
-            return <EventsList
+            return <EventsListItem
               key={event.id}
               event={event} />
           })

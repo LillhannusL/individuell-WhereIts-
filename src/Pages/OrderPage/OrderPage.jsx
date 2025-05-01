@@ -1,15 +1,20 @@
 import './OrderPage.css';
 import Navbar from '../../Components/Nav/Navbar';
-import { useLocalStorageCart } from '../../Hooks/useLocalStorageCart';
+import { useEffect } from 'react';
 import SingleOrders from '../../Components/SingleOrders/SingleOrders';
 import Button from '../../Components/Button/Button';
+import useCartStore  from "../../Store/UseCartStore"
 
 function OrderPage() {
-	const { tickets } = useLocalStorageCart();
+	const { tickets, syncCountsandTickets } = useCartStore();
 
 	const totalPrice = tickets.reduce((sum, ticket) => {
 		return sum + ticket.price * ticket.quantity;
 	}, 0);
+
+	useEffect(() => {
+		syncCountsandTickets();
+	}, []);
 
 	return (
 		<section className="page orderpage">
@@ -17,7 +22,9 @@ function OrderPage() {
 			<section className="orderTicket">
 				{tickets &&
 					tickets.map((ticket) => {
-						return <SingleOrders key={ticket.id} ticket={ticket} />;
+						return <SingleOrders 
+						key={ticket.id} 
+						ticket={ticket} />;
 					})}
 			</section>
 			<div className="orderpage__bottom">

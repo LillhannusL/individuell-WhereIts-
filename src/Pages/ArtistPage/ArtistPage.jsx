@@ -2,18 +2,18 @@ import "./ArtistPage.css"
 import { useParams } from "react-router-dom"
 import { useFetch } from "../../Hooks/useFetch"
 import { useState, useEffect } from "react"
-import { useLocalStorageCart } from "../../Hooks/useLocalStorageCart"
-import useCartStore from "../../Store/UseCartStore"
+// import { useLocalStorageCart } from "../../Hooks/useLocalStorageCart"
 import Navbar from "../../Components/Nav/Navbar"
 import Artist from "../../Components/Artist/Artist"
 import Counter from "../../Components/Counter/Counter"
 import Button from "../../Components/Button/Button";
+import useCartStore  from "../../Store/UseCartStore"
 
 function ArtistPage() {
   const [event, setEvent] = useState(null)
   const { eventList, isLoading, isError } = useFetch()
   const { id } = useParams()
-  const { tickets, addTickets, removeTickets } = useLocalStorageCart()
+  const { tickets, addTickets, removeTickets } = useCartStore()
   const { counts, reset } = useCartStore()
 
   useEffect(() => {
