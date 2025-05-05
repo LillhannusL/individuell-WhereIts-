@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+
+.ticket {
+    width: 80%;
+    background-color: white;
+    list-style-type: none;
+    margin-top: .5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px black;
+    padding: .5rem 1rem;
+}
+
+.ticket__text {
+    font-size: .7rem;
+    font-family: 'Fira sans', sans-serif;
+    font-weight: 700;
+    color: #00000070;
+
+}
+
+.ticket__name {
+    color: var(--text-pink);
+    font-family: 'Sansita One', sans-serif;
+    font-weight: 200;
+    padding: 1rem 0;
+    border-bottom: 1px dotted gray;
+}
+
+.ticket__where {
+    font-family: 'Fira sans';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #00000090;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+}
+
+.ticket_when {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.ticket_when-border {
+    width: 100%;
+    border: 1px dotted grey;
+    padding: .5rem;
+}
+
+.ticket_when div:first-child {
+    border-left: none ;
+}
+
+.ticket_when div:last-child {
+    border-right: none; 
+}
+.ticket__time {
+    font-family: 'Fira sans', sans-serif;
+}
+
+.ticket__code {
+    display: grid;
+    place-content: center;
+}
+
+.ticket__barcode {
+    font-family:"Libre Barcode 128", system-ui;
+    font-size: 5rem;
+}

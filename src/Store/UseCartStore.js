@@ -109,8 +109,13 @@ const useCartStore = create((set) => ({
                 });
                 localStorage.setItem('counts', JSON.stringify(newCounts))
                 return { counts: newCounts}
-            })
+            }),
 
+        clearCart: () => {
+            localStorage.removeItem('tickets')
+            localStorage.removeItem('counts')
+            set({ tickets: [], counts: {}})
+        }
 }));
 
 export default useCartStore;

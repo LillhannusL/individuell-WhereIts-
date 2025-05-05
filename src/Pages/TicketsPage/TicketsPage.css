@@ -1,0 +1,12 @@
+.tickespage {
+    background-image: linear-gradient(var(--text-pink), 25%, var(--dark-blue));
+}
+
+.ticketList {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+
+}
