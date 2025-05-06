@@ -8,11 +8,12 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.38rem;
     font-weight: 600;
+    margin-bottom: 3rem;
 
-    position: fixed;
-    bottom: 70px;
+    /* position: fixed; */
+    /* bottom: 70px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
     .order__button:active{

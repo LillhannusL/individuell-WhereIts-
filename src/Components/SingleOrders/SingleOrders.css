@@ -1,17 +1,12 @@
 .ticket {
-    width: 100%;
-}
-
-.counter--cart {
+    width: 90%;
     border: 1px solid var(--text-pink);
-    width: 100%;
     border-radius: 3px;
 }
 
 .counter--cart h2 {
     padding: .5rem 0 0 0.5rem ;
     color: var(--text-pink);
-    font-size: 1.5rem;
 }
 
 .counter--cart h4 {

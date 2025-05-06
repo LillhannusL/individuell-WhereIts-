@@ -1,40 +1,43 @@
 import './Ticket.css';
 import { v4 as uuidv4 } from 'uuid';
 import { use, useMemo } from 'react';
+import {shortenDate} from "../Utils/shortenDate"
 
-function Ticket({ event }) {
+function Ticket({ ticket }) {
 	const ticketNumber = useMemo(() => {
 		const generate = uuidv4();
 		const toUpper = generate.toUpperCase();
 		return toUpper.substring(0, 5);
 	}, []);
 
+	
+
 	return (
-		<li className="ticket">
-			<p className="ticket__text">WHAT</p>
-			<h2 className="ticket__name">{event.name}</h2>
-			<p className="ticket__text">WHERE</p>
-			<p className="ticket__where">{event.where}</p>
-			<div className="ticket_when">
-				<div className="ticket_when-border">
-					<p className="ticket__text">WHEN</p>
-					<p className="ticket__time">{event.when.date}</p>
+		<li className="boughtTicket">
+			<p className="boughtTicket__text">WHAT</p>
+			<h2 className="boughtTicket__name">{ticket.name}</h2>
+			<p className="boughtTicket__text">WHERE</p>
+			<p className="boughtTicket__where">{ticket.where}</p>
+			<div className="boughtTicket_when">
+				<div className="boughtTicket_when-border">
+					<p className="boughtTicket__text">WHEN</p>
+					<p className="boughtTicket__time">{shortenDate(ticket.when.date)}</p>
 				</div>
-				<div className="ticket_when-border">
-					<p className="ticket__text">FROM</p>
-					<p className="ticket__time">{event.when.from}</p>
+				<div className="boughtTicket_when-border">
+					<p className="boughtTicket__text">FROM</p>
+					<p className="boughtTicket__time">{ticket.when.from}</p>
 				</div>
-				<div className="ticket_when-border">
-					<p className="ticket__text">TO</p>
-					<p className="ticket__time">{event.when.to}</p>
+				<div className="boughtTicket_when-border">
+					<p className="boughtTicket__text">TO</p>
+					<p className="boughtTicket__time">{ticket.when.to}</p>
 				</div>
 			</div>
-			<div className="ticket__seating">
-				<p className="ticket__text">INFO</p>
-				<p>section + seat</p>
+			<div className="boughtTicket__seating">
+				<p className="boughtTicket__text">INFO</p>
+				<p className="boughtTicket__info">Section {ticket.section} - seat {ticket.seatNumber} </p>
 			</div>
-			<div className="ticket__code">
-				<p className="ticket__barcode">{ticketNumber}</p>
+			<div className="boughtTicket__code">
+				<p className="boughtTicket__barcode">{ticketNumber}</p>
 				<p>#{ticketNumber}</p>
 			</div>
 		</li>
