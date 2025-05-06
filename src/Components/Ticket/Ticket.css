@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+
+.boughtTicket {
+    margin-left: 2.5rem;
+    width: 80%;
+    background-color: white;
+    list-style-type: none;
+    margin-top: .5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px black;
+    background-image: linear-gradient(#FFFFFF, 85%, rgb(175, 174, 174));
+}
+
+.boughtTicket__text {
+    font-size: .7rem;
+    font-family: 'Fira sans', sans-serif;
+    font-weight: 700;
+    color: #00000070;
+    padding: .5rem;
+}
+
+.boughtTicket__name {
+    color: var(--text-pink);
+    font-family: 'Sansita One', sans-serif;
+    font-weight: 200;
+    padding: 1rem 0;
+    border-bottom: 1px dotted gray;
+    padding: .5rem;
+
+}
+
+.boughtTicket__where {
+    font-family: 'Fira sans';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #00000090;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+    padding: .5rem;
+
+}
+
+.boughtTicket_when {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.boughtTicket_when-border {
+    width: 100%;
+    border: 1px dotted grey;
+    padding: .5rem;
+}
+
+.boughtTicket_when div:first-child {
+    border-left: none ;
+}
+
+.boughtTicket_when div:last-child {
+    border-right: none; 
+}
+.boughtTicket__time {
+    font-family: 'Fira sans', sans-serif;
+    padding: 0 .5rem
+}
+
+.boughtTicket__code {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.boughtTicket__barcode {
+    font-family:"Libre Barcode 128", system-ui;
+    font-size: 6rem;
+    letter-spacing: 4px;
+    line-height: .3;
+    padding-top: 2rem;
+}
+
+.boughtTicket__code p:last-child {
+    margin-top: 0.3rem;
+    font-family: 'Fira sans', sans-serif;
+    font-weight: 500;
+    color: #00000070;
+    padding: .5rem;
+    letter-spacing: 2px;
+}
+
+
+.boughtTicket__info {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .5rem;
+    color: #00000090;
+
+}

@@ -1,0 +1,33 @@
+.artistevent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.artistevent__info {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: .5rem
+}
+
+.artistevent h2 {
+    font-family: 'Sansita One', sans-serif;
+    letter-spacing: .1rem;
+    font-size: 2.2rem;
+    color: var(--text-pink);
+}
+
+.artistevent__when {
+    color: var(--turqoise);
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+
+.artistevent__where {
+    color: var(--white-opacity)
+}
