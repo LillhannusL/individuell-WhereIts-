@@ -1,0 +1,25 @@
+.tickespage {
+    background-image: linear-gradient(var(--text-pink), 25%, var(--dark-blue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticketList {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.noTickets {
+    font-family: 'Fira sans';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--turqoise);
+    text-shadow: var(--text-shadow);
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+    padding: .5rem;
+}

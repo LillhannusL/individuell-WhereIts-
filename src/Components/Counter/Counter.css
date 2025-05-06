@@ -1,0 +1,43 @@
+.counter {
+    width: 14.4rem;
+    height: 8.13rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--text-pink);
+    border-radius: 3px;
+}
+
+.counter__top h5 {
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--white);
+    text-shadow: 1px 1px 0 var(--text-pink);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.counter__bottom {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--text-pink);
+}
+
+.counter__number {
+    border-left: 1px solid var(--text-pink);
+    border-right: 1px solid var(--text-pink);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.75rem;
+    padding:  0.6rem 2.5rem;
+
+    color: var(--white)
+}
+
+.counter__btn {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: none;
+    font-size: 2rem;
+    font-weight: 400;
+}

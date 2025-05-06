@@ -1,0 +1,43 @@
+.orderpage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orderpage h1 {
+    padding: 2rem 0;
+    font-weight: 300;
+}
+
+.orderTicket {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.orderpage__bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem;
+}
+
+.orderpage__totalText {
+    font-family: 'Fira sans';
+    font-style: italic;
+    color: var(--white)
+}
+
+.orderpage__totalPrice {
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--white);
+    text-shadow: 1px 1px 0 var(--text-pink);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
