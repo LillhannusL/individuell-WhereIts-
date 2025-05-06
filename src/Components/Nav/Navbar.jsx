@@ -13,10 +13,6 @@ function Navbar() {
                 <i className="fa-solid fa-calendar-days fa-2xl"></i>
                 <h2>Events</h2>
             </Link>
-            <Link to='/order' className="link">
-                <i className="fa-solid fa-cart-shopping fa-2xl"></i>
-                <h2>Varukorg</h2>
-            </Link>
             <Link to='/tickets' className="link">
                 <i className="fa-solid fa-ticket fa-2xl"></i>
                 <h2>Biljetter</h2>
