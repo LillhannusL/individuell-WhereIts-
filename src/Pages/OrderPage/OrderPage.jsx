@@ -1,12 +1,12 @@
 import './OrderPage.css';
 import Navbar from '../../Components/Nav/Navbar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import SingleOrders from '../../Components/SingleOrders/SingleOrders';
 import Button from '../../Components/Button/Button';
 import useCartStore  from "../../Store/UseCartStore"
 
 function OrderPage() {
-	const { tickets, syncCountsandTickets } = useCartStore();
+	const { tickets, syncCountsandTickets, clearCart } = useCartStore();
 
 	const totalPrice = tickets.reduce((sum, ticket) => {
 		return sum + ticket.price * ticket.quantity;
@@ -15,6 +15,13 @@ function OrderPage() {
 	useEffect(() => {
 		syncCountsandTickets();
 	}, []);
+
+	const createTicket = () => {
+		// kopiera från tickets till boughtTickets(ny i localstorage)
+		localStorage.setItem('boughtTickets', JSON.stringify(tickets));
+		// ta bort från tickets i LS
+		clearCart()
+		}
 
 	return (
 		<section className="page orderpage">
@@ -30,7 +37,7 @@ function OrderPage() {
 			<div className="orderpage__bottom">
 				<p className="orderpage__totalText">Totalt värde på order</p>
 				<h5 className="orderpage__totalPrice">{totalPrice} sek</h5>
-				<Button text="Skicka order" />
+				<Button onClick={createTicket} text="Skicka order" />
 			</div>
 			<Navbar />
 		</section>

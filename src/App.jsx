@@ -3,6 +3,7 @@ import LandingPage from "./Pages/LandingPage/LaningPage"
 import EventsPage from "./Pages/EventsPage/EventsPage"
 import OrderPage from "./Pages/OrderPage/OrderPage"
 import ArtistPage from "./Pages/ArtistPage/ArtistPage"
+import TicketsPage from "./Pages/TicketsPage/TicketsPage"
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
       path: '/artist/:id',
       element: <ArtistPage />
     },
+    {
+      path: '/tickets',
+      element: <TicketsPage />
+    }
   ])
  
   return (
