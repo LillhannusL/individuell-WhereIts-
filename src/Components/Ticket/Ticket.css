@@ -61,8 +61,11 @@
 }
 
 .ticket__code {
+    width: 100%;
     display: grid;
     place-content: center;
+    background-color: rgb(216, 216, 216);
+    padding: 2
 }
 
 .ticket__barcode {
