@@ -4,10 +4,14 @@ import { useFetch } from '../../Hooks/useFetch';
 import Navbar from '../../Components/Nav/Navbar';
 import Button from '../../Components/Button/Button';
 import { useNavigate } from 'react-router-dom';
+import { useState } from "react"
+import SearchInput from '../../Components/SearchInput/SearchInput';
 
 function EventsPage() {
 	const { eventList, isLoading, isError } = useFetch();
-  const navigate = useNavigate()
+ 	const navigate = useNavigate()
+	const [userInput, setUserInput] = useState('')
+	const [searchResult, setSearchResult] = useState([])
 
 	if (isLoading)
 		return (
@@ -31,9 +35,15 @@ function EventsPage() {
 	return (
 		<section className="page eventspage">
 			<h1>Events</h1>
-			<p>sök</p>
+			<SearchInput 
+			eventList={eventList}
+			setUserInput={setUserInput}
+			userInput={userInput}
+			setSearchResult={setSearchResult}
+			searchResult={searchResult}
+			/>
 			<section className="eventspage__list">
-				{eventList.map((event) => {
+				{(searchResult.length > 0 ? searchResult : eventList).map((event) => {
 					return <EventsListItem key={event.id} event={event} />;
 				})}
 			</section>
